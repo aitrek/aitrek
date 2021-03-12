@@ -1,1 +1,1 @@
-Sitemap: https://aitrek.github.io/aitrek/sitemap.xml
+Sitemap: https://www.aitrek.cn/aitrek/sitemap.xml
