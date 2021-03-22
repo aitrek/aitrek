@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>sklearn主要功能模块 | aitrek</title>
+<title>sklearn机器学习01：主要功能模块 | aitrek</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="sklearn主要功能模块" />
+<meta property="og:title" content="sklearn机器学习01：主要功能模块" />
 <meta name="author" content="aitrek" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="读sklearn源码学机器学习" />
 <meta property="og:description" content="读sklearn源码学机器学习" />
-<link rel="canonical" href="https://aitrek.github.io/aitrek/sklearn/machine_learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html" />
-<meta property="og:url" content="https://aitrek.github.io/aitrek/sklearn/machine_learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html" />
+<link rel="canonical" href="https://aitrek.github.io/aitrek/sklearn/machine%20learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html" />
+<meta property="og:url" content="https://aitrek.github.io/aitrek/sklearn/machine%20learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html" />
 <meta property="og:site_name" content="aitrek" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-03-22T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://aitrek.github.io/aitrek/sklearn/machine_learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html","@type":"BlogPosting","headline":"sklearn主要功能模块","dateModified":"2021-03-22T00:00:00-05:00","datePublished":"2021-03-22T00:00:00-05:00","author":{"@type":"Person","name":"aitrek"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aitrek.github.io/aitrek/sklearn/machine_learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html"},"description":"读sklearn源码学机器学习","@context":"https://schema.org"}</script>
+{"url":"https://aitrek.github.io/aitrek/sklearn/machine%20learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html","@type":"BlogPosting","headline":"sklearn机器学习01：主要功能模块","dateModified":"2021-03-22T00:00:00-05:00","datePublished":"2021-03-22T00:00:00-05:00","author":{"@type":"Person","name":"aitrek"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aitrek.github.io/aitrek/sklearn/machine%20learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html"},"description":"读sklearn源码学机器学习","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/aitrek/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://aitrek.github.io/aitrek/feed.xml" title="aitrek" /><link rel="shortcut icon" type="image/x-icon" href="/aitrek/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -88,7 +88,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">sklearn主要功能模块</h1><p class="page-description">读sklearn源码学机器学习</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-22T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">sklearn机器学习01：主要功能模块</h1><p class="page-description">读sklearn源码学机器学习</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-22T00:00:00-05:00" itemprop="datePublished">
         Mar 22, 2021
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -106,7 +106,7 @@ window.onload = wrap_img;
         <a class="category-tags-link" href="/aitrek/categories/#sklearn">sklearn</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/aitrek/categories/#machine_learning">machine_learning</a>
+        <a class="category-tags-link" href="/aitrek/categories/#machine learning">machine learning</a>
         
       
       </p>
@@ -138,8 +138,8 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#sklearn主要功能模块">sklearn主要功能模块 </a></li>
-<li class="toc-entry toc-h1"><a href="#对各模块简要说明">对各模块简要说明 </a></li>
+<li class="toc-entry toc-h2"><a href="#sklearn主要功能模块">sklearn主要功能模块 </a></li>
+<li class="toc-entry toc-h2"><a href="#对各模块简要说明">对各模块简要说明 </a></li>
 </ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
@@ -152,16 +152,16 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="sklearn主要功能模块">
+<h2 id="sklearn主要功能模块">
 <a class="anchor" href="#sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>sklearn主要功能模块<a class="anchor-link" href="#sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97"> </a>
-</h1>
+</h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>从sklearn.<strong>init</strong>.py中的<strong>all</strong>可以看到，sklearn对外暴露的接口有下面几个：</p>
+<p>从sklearn.__init__.py中的__all__可以看到，sklearn对外暴露的接口有下面几个：</p>
 
 </div>
 </div>
@@ -198,9 +198,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="对各模块简要说明">
+<h2 id="对各模块简要说明">
 <a class="anchor" href="#%E5%AF%B9%E5%90%84%E6%A8%A1%E5%9D%97%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E" aria-hidden="true"><span class="octicon octicon-link"></span></a>对各模块简要说明<a class="anchor-link" href="#%E5%AF%B9%E5%90%84%E6%A8%A1%E5%9D%97%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E"> </a>
-</h1>
+</h2>
 </div>
 </div>
 </div>
@@ -355,7 +355,7 @@ sklearn中的告警、报错模块，框架工程辅助模块，非模型、算�
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/aitrek/sklearn/machine_learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html" hidden></a>
+</script><a class="u-url" href="/aitrek/sklearn/machine%20learning/2021/03/22/sklearn-01-sklearn%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
